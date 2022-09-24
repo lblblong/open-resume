@@ -1,0 +1,14 @@
+.index {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    .time {
+      color: var(--time-color, #8c8c8c);
+    }
+  }
+
+  .content {
+    padding-top: 8px;
+  }
+}

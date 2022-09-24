@@ -1,0 +1,27 @@
+.index {
+  --height: 28px;
+  border-bottom: 2px solid var(--color-primary);
+  color: #fff;
+  height: var(--height);
+  .text {
+    display: inline-block;
+    position: relative;
+    height: var(--height);
+    line-height: var(--height);
+    background: var(--color-primary);
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    &::after {
+      position: absolute;
+      right: calc(var(--height) * -1);
+      content: '';
+      width: 0;
+      height: 0;
+      border-bottom: var(--height) solid var(--color-primary);
+      border-right: var(--height) solid transparent;
+    }
+  }
+}

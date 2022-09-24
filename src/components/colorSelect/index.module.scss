@@ -1,0 +1,21 @@
+.index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1;
+  gap: 8px;
+  font-family: '宋体';
+  > div {
+    width: 100%;
+    height: 108px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff;
+    padding: 16px;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

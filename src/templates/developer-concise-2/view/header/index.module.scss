@@ -1,0 +1,26 @@
+.index {
+  padding: 24px var(--padding-horizontal);
+  display: flex;
+  line-height: 1;
+  position: relative;
+  color: #fff;
+  background: var(--color-primary);
+
+  .content {
+    position: relative;
+    flex: 1;
+    padding: 2px 0;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    .name {
+      font-size: 36px;
+    }
+    .des {
+      padding-top: 16px;
+      line-height: 1.8;
+    }
+  }
+}

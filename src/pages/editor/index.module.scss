@@ -1,0 +1,16 @@
+.index {
+  --header-height: 76px;
+  --form-width: 660px;
+  // --a4w: 210px;
+  // --a4h: 297px;
+  // --scale: 3.95;
+  // --content-width: calc(var(--a4w) * var(--scale));
+  // --content-height: calc(var(--a4h) * var(--scale) + 1px);
+  --content-width: 830px;
+  --content-height: 1174px;
+  .main {
+    padding-top: var(--header-height);
+    padding-left: var(--form-width);
+    background-color: #f1f1f1;
+  }
+}

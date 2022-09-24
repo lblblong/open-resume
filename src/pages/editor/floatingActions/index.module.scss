@@ -1,0 +1,55 @@
+.index {
+  background: #fff;
+  box-shadow: var(--shadow-1-down);
+  border-radius: 100px;
+  overflow: hidden;
+  padding: 4px;
+  display: flex;
+
+  .item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 100px;
+
+    &:hover {
+      background: rgba($color: #000000, $alpha: 0.03);
+    }
+  }
+}
+
+.symbolGroups {
+  width: 352px;
+  height: 435px;
+  background: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 16px;
+  box-shadow: var(--shadow-1-down);
+  border-radius: 12px;
+  .group {
+    margin: 16px;
+    margin-right: 8px;
+    overflow-x: hidden;
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      color: rgba($color: #000000, $alpha: 0.6);
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba($color: #000000, $alpha: 0.06);
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.1);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.index {
+  position: relative;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+
+  .text {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

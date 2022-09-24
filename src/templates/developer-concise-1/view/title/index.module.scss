@@ -1,0 +1,21 @@
+.index {
+  position: relative;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  .title {
+    font-weight: bold;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 24px;
+    font-size: 20px;
+    color: #333;
+  }
+  .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba($color: #000000, $alpha: 0.03), 86%, transparent);
+  }
+}

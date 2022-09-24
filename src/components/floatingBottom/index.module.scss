@@ -1,0 +1,13 @@
+.index {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+.hidden {
+  bottom: 0;
+  transform: translateX(-50%) translateY(100%);
+}

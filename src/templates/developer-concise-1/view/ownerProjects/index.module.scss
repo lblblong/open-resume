@@ -1,0 +1,27 @@
+.index {
+  .item {
+    padding-bottom: 12px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      .name {
+        background: #f2f2f2;
+        padding: 0 8px;
+        line-height: 1.8;
+        border-radius: 4px;
+        border-left: solid #dfdfdf 6px;
+      }
+      .time {
+        color: var(--color-text-secondary);
+      }
+    }
+
+    .des {
+      margin-top: 6px;
+    }
+  }
+
+  .more {
+    margin-top: 4px;
+  }
+}

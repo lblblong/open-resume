@@ -1,0 +1,20 @@
+.index {
+  .item {
+    padding-bottom: 12px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      .name {
+        font-weight: bold;
+      }
+    }
+
+    .des {
+      margin-top: 6px;
+    }
+  }
+
+  .more {
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,61 @@
+.index {
+  --color-primary: #002fa7;
+  --background: #fff;
+  --padding-horizontal: 38px;
+  --fontsize-h1: 18px;
+  --fontsize-h2: 16px;
+
+  width: var(--content-width);
+  height: var(--content-height);
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+
+  main {
+    flex: 1;
+    display: flex;
+    padding: 0 var(--padding-horizontal);
+    padding-bottom: var(--padding-horizontal);
+    font-size: 16px;
+    line-height: 1.8;
+
+    .left {
+      flex-shrink: 0;
+      width: 230px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid rgba($color: #000000, $alpha: 0.03);
+      padding-right: 24px;
+      > * + * {
+        margin-top: 38px;
+      }
+    }
+    .right {
+      padding-left: 38px;
+
+      .title {
+        margin-left: -12px;
+      }
+
+      .item {
+        padding-top: 16px;
+      }
+
+      .introduceTitle {
+        margin-top: 32px;
+      }
+
+      .introduce {
+        padding-top: 16px;
+      }
+    }
+  }
+}
+
+@page {
+  margin: 0;
+  padding: 0;
+}

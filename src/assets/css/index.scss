@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'UbuntuMono-R-Powerline';
+  src: url('../fonts/UbuntuMono-R-Powerline.otf');
+}
+
+@font-face {
+  font-family: 'AaLingGanHei55J-2';
+  src: url('../fonts/AaLingGanHei55J-2.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'UbuntuMono-R-Powerline', 'AaLingGanHei55J-2';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

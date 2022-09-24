@@ -1,0 +1,88 @@
+.index {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  height: 100vh;
+  width: var(--form-width);
+  background: #fff;
+  display: flex;
+  z-index: 8;
+  padding-top: calc(var(--header-height));
+
+  .menu {
+    border-right: 1px solid #efefef;
+    width: 50px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 0;
+      cursor: pointer;
+    }
+
+    .item:hover,
+    .active {
+      position: relative;
+      background: rgba($color: #000000, $alpha: 0.06);
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-left: solid 4px var(--color-primary);
+      }
+    }
+  }
+
+  .container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+
+    .content {
+      height: 100%;
+      width: 100%;
+      padding: 16px;
+      padding-bottom: 260px;
+      overflow-y: scroll;
+      .area + .area {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .availableTemplates {
+    .items {
+      margin-top: 16px;
+      padding: 12px 8px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      background: rgba($color: #000000, $alpha: 0.06);
+
+      .template {
+        padding: 4px;
+        width: 100%;
+        height: 340px;
+        overflow: hidden;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        .image {
+          flex: 1;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .name {
+          padding: 8px;
+        }
+      }
+    }
+  }
+}

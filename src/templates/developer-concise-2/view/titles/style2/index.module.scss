@@ -1,0 +1,18 @@
+.index {
+  --height: 28px;
+  border-bottom: 2px solid var(--color-primary);
+  color: #fff;
+  height: var(--height);
+  .text {
+    display: inline-block;
+    position: relative;
+    height: var(--height);
+    line-height: var(--height);
+    background: var(--color-primary);
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

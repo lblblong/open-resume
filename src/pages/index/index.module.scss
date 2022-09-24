@@ -1,0 +1,125 @@
+.index {
+  min-width: 1200px;
+  background: rgba($color: #000000, $alpha: 0.06);
+  header {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 52px;
+    img {
+      width: 100%;
+    }
+    .content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background: rgba($color: #000000, $alpha: 0.6);
+
+      .title {
+        font-size: 72px;
+      }
+
+      .actions {
+        padding-top: 24px;
+        display: flex;
+        gap: 16px;
+        .action {
+          padding: 24px 50px;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .icon {
+            margin-right: 8px;
+          }
+        }
+        .github {
+          background: transparent;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  > * + * {
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    > .title {
+      font-size: 38px;
+      margin-bottom: 24px;
+      font-weight: bold;
+    }
+  }
+
+  main {
+    .templates {
+      display: flex;
+      gap: 38px;
+      .template {
+        position: relative;
+        overflow: hidden;
+        padding: 8px;
+        background: #fff;
+
+        .poster {
+          width: calc(210px * 1.6);
+          height: calc(297px * 1.6);
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+
+        .mask {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: rgba($color: #fff, $alpha: 0.96);
+          padding: 16px;
+          box-shadow: var(--shadow-1-down);
+
+          > * + * {
+            margin-top: 12px;
+          }
+
+          .name {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .tip {
+      padding-top: 24px;
+      color: rgba($color: #000000, $alpha: 0.6);
+    }
+  }
+
+  .group {
+    .subTitle {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .image {
+      width: 300px;
+      padding: 8px;
+      background: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

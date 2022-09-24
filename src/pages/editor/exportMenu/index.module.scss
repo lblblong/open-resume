@@ -1,0 +1,44 @@
+.index {
+  background: #fff;
+  min-width: 300px;
+  line-height: 1;
+  box-shadow: var(--shadow-1-down);
+  padding: 6px 8px;
+  border-radius: 5px;
+  .item {
+    padding: 16px 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background: rgba($color: #000000, $alpha: 0.06);
+    }
+    .icon {
+      width: 48px;
+    }
+    .titleBox {
+      flex: 1;
+      padding-left: 16px;
+      .title {
+        font-weight: bold;
+        font-size: 16px;
+        span {
+          padding: 4px 8px;
+          font-size: 8px;
+          background: var(--color-primary);
+          border-radius: 5px;
+          margin-left: 8px;
+          color: #fff;
+        }
+      }
+      .des {
+        padding-top: 10px;
+        color: rgba($color: #000000, $alpha: 0.6);
+        font-size: 13px;
+      }
+    }
+  }
+  .item + .item {
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.06);
+  }
+}

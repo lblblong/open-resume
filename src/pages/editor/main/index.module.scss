@@ -1,0 +1,24 @@
+.index {
+  padding: 68px 16px;
+  position: relative;
+  .toolbar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-radius: 2px;
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 2px;
+  }
+  .content {
+    margin: 0 auto;
+    min-width: var(--content-width);
+    width: var(--content-width);
+    overflow-x: hidden;
+    box-shadow: var(--shadow-1-down);
+  }
+
+  .gray {
+    -webkit-filter: grayscale(0.95);
+  }
+}

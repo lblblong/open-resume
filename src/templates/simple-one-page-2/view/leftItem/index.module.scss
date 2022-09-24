@@ -1,0 +1,12 @@
+.index {
+  .title {
+    margin-left: -12px;
+  }
+  .labels {
+    color: rgba($color: #fff, $alpha: 0.7);
+    .item {
+      line-height: 1.8;
+      padding-top: 8px;
+    }
+  }
+}

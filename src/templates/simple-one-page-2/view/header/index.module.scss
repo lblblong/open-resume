@@ -1,0 +1,16 @@
+.index {
+  line-height: 1;
+  font-weight: bold;
+  color: #333;
+
+  .hello {
+    font-size: 94px;
+    span {
+      color: var(--color-primary);
+    }
+  }
+  .name {
+    font-size: 32px;
+    padding-top: 16px;
+  }
+}

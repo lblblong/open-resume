@@ -1,8 +1,9 @@
-import { Button, Tag } from 'antd'
+import { Button } from 'antd'
 import clsx from 'clsx'
 import headBg from 'src/assets/image/index-head-bg.jpg'
 import qrcodeWechat from 'src/assets/image/qrcode-wechat.png'
 import { Icon } from 'src/components/icon'
+import { TemplateCard } from 'src/components/templateCard'
 import { toEditor } from 'src/pages/editor/route'
 import { appStore } from 'src/stores/app'
 import { templates } from 'src/templates'
@@ -41,21 +42,8 @@ export const IndexPage = () => {
         <div className={styles.templates}>
           {templates.map((it, i) => {
             return (
-              <div key={i} className={styles.template}>
-                <div className={styles.poster}>
-                  <img src={it.poster} alt="" />
-                </div>
-                <div className={styles.mask}>
-                  <div className={styles.name}>{it.name}</div>
-                  <div className={styles.tags}>
-                    {it.tags?.map((tag, i) => {
-                      return <Tag key={i}>{tag}</Tag>
-                    })}
-                  </div>
-                  <Button type="primary" onClick={() => toEditor({ params: { key: it.key } })}>
-                    使用该模板
-                  </Button>
-                </div>
+              <div className={styles.template} key={i}>
+                <TemplateCard value={it} onUse={() => toEditor({ params: { key: it.key } })} />
               </div>
             )
           })}

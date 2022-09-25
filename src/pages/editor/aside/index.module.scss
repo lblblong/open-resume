@@ -57,31 +57,13 @@
   .availableTemplates {
     .items {
       margin-top: 16px;
-      padding: 12px 8px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
-      background: rgba($color: #000000, $alpha: 0.06);
-
       .template {
-        padding: 4px;
         width: 100%;
-        height: 340px;
-        overflow: hidden;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        .image {
-          flex: 1;
-          overflow: hidden;
-          img {
-            width: 100%;
-          }
-        }
-        .name {
-          padding: 8px;
-        }
+        padding: 8px;
+        background: rgba($color: #000000, $alpha: 0.06);
       }
     }
   }

@@ -2,6 +2,7 @@ import { Alert } from 'antd'
 import clsx from 'clsx'
 import { Observer, useObserver } from 'mobx-react-lite'
 import { useRef } from 'react'
+import { TemplateCard } from 'src/components/templateCard'
 import { useStore } from 'src/shared/storeProvider'
 import { FloatingActions } from '../floatingActions'
 import { Store } from '../store'
@@ -34,11 +35,8 @@ export const Aside = () => {
           <div className={styles.items}>
             {store.availableTemplates.map((it, i) => {
               return (
-                <div key={i} className={styles.template} onClick={() => store.changeTemplate(it.key)}>
-                  <div className={styles.image}>
-                    <img src={it.poster} />
-                  </div>
-                  <div className={styles.name}>{it.name}</div>
+                <div key={i} className={styles.template}>
+                  <TemplateCard value={it} onUse={() => store.changeTemplate(it.key)} />
                 </div>
               )
             })}

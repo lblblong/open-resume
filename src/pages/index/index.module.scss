@@ -65,37 +65,15 @@
     .templates {
       display: flex;
       gap: 38px;
+      width: 100%;
+      padding: 0 160px;
       .template {
-        position: relative;
-        overflow: hidden;
+        width: 100%;
         padding: 8px;
         background: #fff;
-
-        .poster {
-          width: calc(210px * 1.6);
-          height: calc(297px * 1.6);
-          overflow: hidden;
-          img {
-            width: 100%;
-          }
-        }
-
-        .mask {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background: rgba($color: #fff, $alpha: 0.96);
-          padding: 16px;
+        transition: all 0.3s;
+        &:hover {
           box-shadow: var(--shadow-1-down);
-
-          > * + * {
-            margin-top: 12px;
-          }
-
-          .name {
-            font-size: 24px;
-          }
         }
       }
     }

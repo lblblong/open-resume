@@ -1,4 +1,4 @@
-import { action, makeObservable, observable, toJS } from 'mobx'
+import { makeObservable, observable, toJS } from 'mobx'
 import React, { ElementType, FC, ReactNode } from 'react'
 
 const TemplateContext = React.createContext<BaseTemplate>(undefined as any)
@@ -16,7 +16,6 @@ export abstract class BaseTemplate<D = unknown, C = unknown> {
     makeObservable(this, {
       data: observable,
       config: observable,
-      importData: action,
     })
   }
 

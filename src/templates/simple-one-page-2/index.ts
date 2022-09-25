@@ -1,6 +1,6 @@
 import React from 'react'
 import { INormalSidevarData, NormalSidebarModel } from 'src/shared/formily/datas/normal-sidebar'
-import { FormilyTemplate } from '../../shared/formily/store'
+import { FormilyTemplate } from '../../shared/formily/template'
 import poster from './assets/poster.jpeg'
 
 const View = React.lazy(() => import('./view'))

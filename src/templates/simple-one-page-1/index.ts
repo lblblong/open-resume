@@ -21,9 +21,4 @@ export class SimpleOnePage1Template extends FormilyTemplate<INormalSidevarData, 
   poster = poster
   defaultData = NormalSidebarModel.defaultData
   defaultConfig = DEFAULT_CONFIG
-
-  config = {
-    primaryColor: '#002FA7',
-    background: '#ffffff',
-  }
 }

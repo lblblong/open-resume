@@ -1,6 +1,7 @@
-import { Checkbox } from 'antd'
+import { Checkbox, Spin } from 'antd'
 import clsx from 'clsx'
 import { useObserver } from 'mobx-react-lite'
+import { Suspense } from 'react'
 import { useStore } from 'src/shared/storeProvider'
 import { Store } from '../store'
 import styles from './index.module.scss'
@@ -18,7 +19,9 @@ export const Main = () => {
 
       <div className={clsx(styles.content, store.grayPreview && styles.gray)}>
         <div id="template-view">
-          <store.template.view></store.template.view>
+          <Suspense fallback={<Spin />}>
+            <store.template.view></store.template.view>
+          </Suspense>
         </div>
       </div>
     </div>

@@ -10,12 +10,10 @@ export const appStore = new (class {
     makeAutoObservable(this)
 
     window.onbeforeprint = () => {
-      console.log('开始打印')
       this.print = true
     }
 
     window.onafterprint = () => {
-      console.log('打印结束')
       this.print = false
     }
   }

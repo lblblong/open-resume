@@ -27,7 +27,7 @@
       bottom: 0;
       width: 100%;
       background: rgba($color: #fff, $alpha: 0.96);
-      padding: 16px;
+      padding: 8px;
       box-shadow: var(--shadow-1-down);
 
       > * + * {
@@ -35,7 +35,7 @@
       }
 
       .name {
-        font-size: 24px;
+        font-size: 16px;
       }
     }
   }

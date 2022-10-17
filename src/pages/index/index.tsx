@@ -52,14 +52,32 @@ export const IndexPage = () => {
         <div className={styles.tip}>更多模板敬请期待...</div>
       </main>
 
-      <div className={styles.group}>
-        <div className={styles.title}>交流群</div>
-        <div className={styles.subTitle}>这里有一群和你一样正在找工作的朋友，来加入我们的群聊吧。</div>
+      <footer>
+        <div className={styles.content}>
+          <div className={styles.thanks}>
+            <div className={styles.title}>感谢以下开源项目</div>
+            <div className={styles.list}>
+              <div className={styles.item}>React</div>
+              <div className={styles.item}>Mobx</div>
+              <div className={styles.item}>Ant Design</div>
+              <div className={styles.item}>Formily</div>
+              <div className={styles.item}>emoji-mart</div>
+              <div className={styles.item}>file-saver</div>
+              <div className={styles.item}>html-to-image</div>
+              <div className={styles.item}>vite</div>
+            </div>
+          </div>
 
-        <div className={styles.image}>
-          <img src={qrcodeWechat} alt="" />
+          <div className={styles.group}>
+            <div className={styles.title}>找工作交流群</div>
+
+            <div className={styles.image}>
+              <img src={qrcodeWechat} alt="" />
+            </div>
+            <div className={styles.des}>(备注 “open-resume” 邀请入群)</div>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
   )
 }

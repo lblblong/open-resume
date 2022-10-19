@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import { useObserver } from 'mobx-react-lite'
 import { Working } from 'src/components/working'
 import { useTemplate } from 'src/templates'
-import { Store } from '..'
+import { SimpleOnePage1Template } from '..'
 import { BaseInfo } from './baseInfo'
 import { Header } from './header'
 import styles from './index.module.scss'
@@ -10,7 +10,7 @@ import { LeftItem } from './leftItem'
 import { Title } from './title'
 
 const View = () => {
-  const { config, data } = useTemplate<Store>()
+  const { config, data } = useTemplate<SimpleOnePage1Template>()
   return useObserver(() => (
     <div
       className={styles.index}

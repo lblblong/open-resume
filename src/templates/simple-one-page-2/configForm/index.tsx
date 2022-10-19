@@ -2,7 +2,7 @@ import { Input } from 'antd'
 import { useObserver } from 'mobx-react-lite'
 import { ColorSelect } from 'src/components/colorSelect'
 import { useTemplate } from 'src/templates'
-import { Store } from '..'
+import { SimpleOnePage2Template } from '..'
 import styles from './index.module.scss'
 
 const backgrounds = [
@@ -39,7 +39,7 @@ const backgrounds = [
 ]
 
 const ConfigForm = () => {
-  const { config } = useTemplate<Store>()
+  const { config } = useTemplate<SimpleOnePage2Template>()
 
   return useObserver(() => (
     <div className={styles.index}>

@@ -1,10 +1,10 @@
 import { useObserver } from 'mobx-react-lite'
 import { useTemplate } from 'src/templates'
-import { Store } from '../..'
+import { SimpleOnePage1Template } from '../..'
 import styles from './index.module.scss'
 
 export const BaseInfo = () => {
-  const { data } = useTemplate<Store>()
+  const { data } = useTemplate<SimpleOnePage1Template>()
 
   return useObserver(() => {
     const items = [

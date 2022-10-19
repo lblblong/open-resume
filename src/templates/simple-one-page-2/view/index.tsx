@@ -1,14 +1,14 @@
 import { useObserver } from 'mobx-react-lite'
 import { Working } from 'src/components/working'
 import { useTemplate } from 'src/templates'
-import { Store } from '..'
+import { SimpleOnePage2Template } from '..'
 import { Header } from './header'
 import styles from './index.module.scss'
 import { LeftItem } from './leftItem'
 import { Title } from './title'
 
 const View = () => {
-  const store = useTemplate<Store>()
+  const store = useTemplate<SimpleOnePage2Template>()
   const { config, data } = store
   return useObserver(() => (
     <div

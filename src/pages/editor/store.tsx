@@ -5,7 +5,7 @@ import { router } from 'src/router'
 import { showInfo } from 'src/shared/toast'
 import { appStore } from 'src/stores/app'
 import { templates } from 'src/templates'
-import { BaseTemplate } from '../../shared/baseTemplate'
+import { BaseTemplate } from 'src/templates/template'
 import { toEditor } from './route'
 
 export class Store {

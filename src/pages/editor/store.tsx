@@ -1,6 +1,8 @@
+import { message } from 'antd'
 import { saveAs } from 'file-saver'
 import { toBlob } from 'html-to-image'
 import { makeAutoObservable } from 'mobx'
+import { openExportPDFHelp } from 'src/components/popups/exportPDFHelp'
 import { router } from 'src/router'
 import { showInfo } from 'src/shared/toast'
 import { appStore } from 'src/stores/app'
@@ -57,27 +59,40 @@ export class Store {
     )
   }
 
-  exportPdf = () => {
-    // TODO: openPrintHelp
+  exportMenuOpen = false
+
+  exportPdf = async () => {
+    this.exportMenuOpen = false
+    await openExportPDFHelp()
     appStore.callPrint()
   }
 
   exportPng = async () => {
-    const container = document.getElementById('template-view')!
+    this.exportMenuOpen = false
+    try {
+      message.loading({
+        key: 'exportPng',
+        content: '正在导出为图片...',
+      })
+      const container = document.getElementById('template-view')!
 
-    const options = {
-      type: 'image/jpeg',
-      cacheBust: true,
-      canvasHeight: container.clientHeight,
-      canvasWidth: container.clientWidth,
+      const options = {
+        type: 'image/jpeg',
+        cacheBust: true,
+        canvasHeight: container.clientHeight,
+        canvasWidth: container.clientWidth,
+      }
+
+      // 提前调用两次避免生成空白的页面
+      await toBlob(container, options)
+      await toBlob(container, options)
+
+      const data = await toBlob(container, options)
+      saveAs(data!, 'resume.jpeg')
+      message.destroy('exportPng')
+    } catch (err: any) {
+      message.error(err.message)
     }
-
-    // 提前调用两次避免生成空白的页面
-    await toBlob(container, options)
-    await toBlob(container, options)
-
-    const data = await toBlob(container, options)
-    saveAs(data!, 'resume.jpeg')
   }
 
   changeTemplate = (key: string) => {

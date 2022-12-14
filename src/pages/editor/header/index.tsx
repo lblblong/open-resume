@@ -34,7 +34,12 @@ export const Header = () => {
           导出配置
         </Button>
 
-        <Dropdown overlay={<ExportMenu />} trigger={['click']}>
+        <Dropdown
+          open={store.exportMenuOpen}
+          onOpenChange={(val) => (store.exportMenuOpen = val)}
+          overlay={<ExportMenu />}
+          trigger={['click']}
+        >
           <Button type="primary" className={clsx(styles.item, styles.export)}>
             <Icon className={styles.icon} value="download-2-line" />
             导出

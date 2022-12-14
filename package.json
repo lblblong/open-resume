@@ -23,6 +23,8 @@
     "mobx": "^6.6.2",
     "mobx-react-lite": "^3.4.0",
     "moment": "^2.29.4",
+    "oh-popup": "^0.1.0",
+    "oh-popup-react": "^0.1.2",
     "oh-router": "^0.3.0",
     "oh-router-react": "^0.0.9",
     "react": "^18.2.0",

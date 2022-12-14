@@ -21,6 +21,8 @@ specifiers:
   mobx: ^6.6.2
   mobx-react-lite: ^3.4.0
   moment: ^2.29.4
+  oh-popup: ^0.1.0
+  oh-popup-react: ^0.1.2
   oh-router: ^0.3.0
   oh-router-react: ^0.0.9
   react: ^18.2.0
@@ -44,6 +46,8 @@ dependencies:
   mobx: 6.6.2
   mobx-react-lite: 3.4.0_qrr2ojv4n7h7ey2xj7njerqqr4
   moment: 2.29.4
+  oh-popup: 0.1.0
+  oh-popup-react: 0.1.2_pmewdyzpvknpzprbf3ltuyfhga
   oh-router: 0.3.0
   oh-router-react: 0.0.9_wlgeabsufqil7sesckxey654b4
   react: 18.2.0
@@ -1001,6 +1005,13 @@ packages:
     resolution: {integrity: sha512-Gj9hZN3a07cbR6zviMUBOMPdWxYhbMI+x+WS0NAIu2zFZmbK8ys9R79g+iG9qLnlCwpFoaB+fKy8Pdv470GsPA==}
     dev: false
 
+  /dom-helpers/5.2.1:
+    resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
+    dependencies:
+      '@babel/runtime': 7.19.0
+      csstype: 3.1.0
+    dev: false
+
   /dot-case/3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
     dependencies:
@@ -1286,6 +1297,10 @@ packages:
     dev: true
     optional: true
 
+  /mitt/3.0.0:
+    resolution: {integrity: sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==}
+    dev: false
+
   /mobx-react-lite/3.4.0_qrr2ojv4n7h7ey2xj7njerqqr4:
     resolution: {integrity: sha512-bRuZp3C0itgLKHu/VNxi66DN/XVkQG7xtoBVWxpvC5FhAqbOCP21+nPhULjnzEqd7xBMybp6KwytdUpZKEgpIQ==}
     peerDependencies:
@@ -1355,6 +1370,26 @@ packages:
   /object-assign/4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /oh-popup-react/0.1.2_pmewdyzpvknpzprbf3ltuyfhga:
+    resolution: {integrity: sha512-H1kIMTEutnuD7nCfNOL709NPLr6SV4KcX1Mo8i5fhWm/YGTP00v9FR9n5X3qxlKHjOLq6W1y7TAlbL6I6r7xSg==}
+    peerDependencies:
+      oh-popup: 0.1.0
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      clsx: 1.2.1
+      oh-popup: 0.1.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
+    dev: false
+
+  /oh-popup/0.1.0:
+    resolution: {integrity: sha512-4gO3FxGH963Qrz4B00qIcj0ffumP3e145bdSZh8PO3IAE+UoHMsMqU9DIxdWrMhZS1t4boAPGEPDaoYMBROpRw==}
+    dependencies:
+      mitt: 3.0.0
     dev: false
 
   /oh-router-react/0.0.9_wlgeabsufqil7sesckxey654b4:
@@ -2008,6 +2043,20 @@ packages:
       '@babel/runtime': 7.19.0
       react: 18.2.0
       resize-observer-polyfill: 1.5.1
+    dev: false
+
+  /react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
+    peerDependencies:
+      react: '>=16.6.0'
+      react-dom: '>=16.6.0'
+    dependencies:
+      '@babel/runtime': 7.19.0
+      dom-helpers: 5.2.1
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react/18.2.0:

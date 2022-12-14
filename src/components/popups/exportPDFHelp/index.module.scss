@@ -1,0 +1,35 @@
+.index {
+  min-width: 660px;
+  max-width: 80vw;
+  width: 50vw;
+  height: 75vh;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  header,
+  footer {
+    padding: 16px;
+    line-height: 1;
+  }
+  main {
+    flex: 1;
+    overflow-y: auto;
+    .content {
+      padding: 16px;
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+  header {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.03);
+    font-size: 18px;
+  }
+  footer {
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.03);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

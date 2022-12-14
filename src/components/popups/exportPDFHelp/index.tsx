@@ -17,7 +17,7 @@ const ExportPDFHelp = () => {
             <Alert message="建议使用 Edge 浏览器进行导出" />
           </p>
           <p>请按以下步骤检查导出配置，避免导出与预览不一致。</p>
-          <p>1️⃣ 打印机选项中选择「另存为PDF</p>
+          <p>1️⃣ 打印机选项中选择「另存为PDF」</p>
           <p>
             <img src={image1} alt="" />
           </p>

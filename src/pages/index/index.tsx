@@ -69,12 +69,12 @@ export const IndexPage = () => {
           </div>
 
           <div className={styles.group}>
-            <div className={styles.title}>找工作交流群</div>
+            <div className={styles.title}>开源不易</div>
 
             <div className={styles.image}>
               <img src={qrcodeWechat} alt="" />
             </div>
-            <div className={styles.des}>(备注 “open-resume” 邀请入群)</div>
+            <div className={styles.des}>(请作者喝杯咖啡☕)</div>
           </div>
         </div>
       </footer>

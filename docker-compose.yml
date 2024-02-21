@@ -1,0 +1,9 @@
+services:
+    openresume:
+        stdin_open: true
+        tty: true
+        container_name: openresume
+        ports:
+            - 5173:5173
+        image: openresume
+        restart: always

@@ -23,6 +23,16 @@ export const IndexPage = () => {
               type="primary"
               className={clsx(styles.action, styles.import)}
               onClick={() => {
+                toEditor({ params: { key: templates[0].key } })
+              }}
+            >
+              <Icon className={styles.icon} value="file-code-line" />
+              立即开始
+            </Button>
+            <Button
+              type="dashed"
+              className={clsx(styles.action, styles.import)}
+              onClick={() => {
                 appStore.importConfig()
               }}
             >
